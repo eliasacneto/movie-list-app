@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./index.scss";
 import { MovieService } from "../../api/MovieService";
 import MovieCard from "../../components/MovieCard/MovieCard";
+import Banner from "../../components/Banner/Banner";
 
 const Home = () => {
   const [movies, setMovies] = useState([]);
@@ -23,11 +24,15 @@ const Home = () => {
 
   return (
     <section className='Home'>
-      {movies.map((movie) => (
-        <div key={movie.id}>
-          <MovieCard movieProp={movie} />
-        </div>
-      ))}
+      <Banner />
+
+      <div className='cards'>
+        {movies.map((movie) => (
+          <div key={movie.id}>
+            <MovieCard movieProp={movie} />
+          </div>
+        ))}
+      </div>
     </section>
   );
 };

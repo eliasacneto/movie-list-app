@@ -1,11 +1,22 @@
+@use "./sass/variables" as *;
+
 @import "./views/Home/index.scss";
 @import "./views/MovieDetail/index.scss";
 @import "./components/Header/index.scss";
 @import "./components/MovieCard/index.scss";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap');
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  // font-family: ;
+  font-family: 'Roboto', sans-serif;
+  background-color: $bg-black;
+}
+
+
+.container{
+  display: flex;
+
 }

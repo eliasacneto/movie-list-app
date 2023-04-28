@@ -1,0 +1,51 @@
+@use "../../sass/variables" as *;
+
+.Header{
+  background-color: #0F0F11;
+  height: 100px;
+  display: flex;
+  width: 100%;
+
+  align-items: center;
+
+  .logo{
+    width: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 50px;
+  }
+  h1{
+    color: $white;
+    font-size: 24px;
+  }
+
+  nav{
+    display: flex;
+    width: 100%;
+    margin-right: 20px;
+    justify-content: flex-end;
+  }
+
+  input{
+    color: $gray;
+    background-color: $bg-black;
+    width: 250px;
+    height: 50px;
+    border: 1px solid $gray;
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 15px;
+    font-size: 16px;
+  }
+  button{
+    background-color: $red;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+
+  }
+}
+

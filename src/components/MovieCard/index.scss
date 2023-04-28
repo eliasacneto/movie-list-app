@@ -1,0 +1,42 @@
+@use "../../sass/variables" as *;
+
+.MovieCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  width: 230px;
+
+  img{
+    width: 230px ;
+  }
+
+  .movie-description{
+    background-color: #212125;
+    height: 150px;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 20px;
+    align-items: center;
+  }
+
+  h3{
+    background-color: #212125;;
+    font-size: 16px;
+    inline-size: 150px;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+
+  button{
+
+    background-color: $red;
+    border: none;
+    color: $white;
+    padding: 10px;
+    border-radius: 8px;
+  }
+}

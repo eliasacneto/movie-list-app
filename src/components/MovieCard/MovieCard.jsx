@@ -7,13 +7,15 @@ const MovieCard = ({ movieProp }) => {
     <div className='MovieCard'>
       <div className='movie-image'>
         <img
-          src={`https"//image.tmdb.org/t/p/w1280${movieProp.poster_path}`}
+          src={`https://image.tmdb.org/t/p/w1280/${movieProp.poster_path}`}
           alt={""}
         />
       </div>
       <div className='movie-description'>
         <h3>{movieProp.title}</h3>
-        <Link to={`/movie/${movieProp.id}`}>Ver detalhes </Link>
+        <Link to={`/movie/${movieProp.id}`}>
+          <button>Ver detalhes</button>
+        </Link>
       </div>
     </div>
   );

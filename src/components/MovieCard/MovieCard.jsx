@@ -14,7 +14,7 @@ const MovieCard = ({ movieProp }) => {
       <div className='movie-description'>
         <h3>{movieProp.title}</h3>
         <Link to={`/movie/${movieProp.id}`}>
-          <button>Ver detalhes</button>
+          <button className='btn-red'>See more</button>
         </Link>
       </div>
     </div>

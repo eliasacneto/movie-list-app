@@ -31,12 +31,16 @@
     text-align: center;
   }
 
-  button{
+  .btn-red{
 
     background-color: $red;
     border: none;
     color: $white;
     padding: 10px;
     border-radius: 8px;
+    text-decoration: none;
   }
+
+
 }
+

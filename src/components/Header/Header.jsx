@@ -1,7 +1,12 @@
 import "./index.scss";
 import Logo from "../../assets/images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCircleUser,
+  faSearch,
+  faUser,
+  faUserCog,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
@@ -14,7 +19,7 @@ const Header = () => {
           className='search'
           placeholder=' Search a movie...'
         ></input>
-        <button>😎</button>
+        <button>PM</button>
       </nav>
     </div>
   );

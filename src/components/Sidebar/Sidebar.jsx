@@ -5,18 +5,22 @@ import {
   faArrowTrendUp,
   faPlay,
   faBoxes,
+  faFile,
 } from "@fortawesome/free-solid-svg-icons";
 
 import "./index.scss";
+import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Sidebar = () => {
   return (
-    <div className='Navbar'>
+    <div className='Sidebar'>
       <nav>
         <ul>
           <li className='active'>
-            <FontAwesomeIcon icon={faCompass} className='icon' />
-            Browse
+            <Link to={"/"} className='link'>
+              <FontAwesomeIcon icon={faCompass} className='icon' />
+              Browse
+            </Link>
           </li>
           <li>
             <FontAwesomeIcon icon={faArrowTrendUp} className='icon' />
@@ -28,7 +32,7 @@ const Navbar = () => {
             Categories
           </li>
           <li>
-            <FontAwesomeIcon icon={faPlay} className='icon' />
+            <FontAwesomeIcon icon={faFile} className='icon' />
             Playlist
           </li>
         </ul>
@@ -37,4 +41,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Sidebar;

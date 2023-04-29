@@ -1,0 +1,16 @@
+@use "../../sass/variables" as *;
+
+.MovieDetail{
+  color: $red;
+
+  .btn-back{
+
+    background-color: $red;
+    border: none;
+    color: $white;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+}

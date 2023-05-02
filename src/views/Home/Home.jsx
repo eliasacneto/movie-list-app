@@ -25,7 +25,6 @@ const Home = () => {
   return (
     <section className='Home'>
       <Banner />
-
       <div className='cards'>
         {movies.map((movie) => (
           <div key={movie.id}>

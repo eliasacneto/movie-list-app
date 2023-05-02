@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCompass,
   faArrowTrendUp,
-  faPlay,
   faBoxes,
-  faFile,
+  faHeart,
+  faList,
 } from "@fortawesome/free-solid-svg-icons";
 
 import "./index.scss";
@@ -28,11 +28,11 @@ const Sidebar = () => {
           </li>
 
           <li>
-            <FontAwesomeIcon icon={faBoxes} className='icon' />
+            <FontAwesomeIcon icon={faList} className='icon' />
             Categories
           </li>
           <li>
-            <FontAwesomeIcon icon={faFile} className='icon' />
+            <FontAwesomeIcon icon={faHeart} className='icon' />
             Playlist
           </li>
         </ul>

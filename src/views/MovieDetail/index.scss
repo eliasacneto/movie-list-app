@@ -1,10 +1,68 @@
 @use "../../sass/variables" as *;
 
-.MovieDetail{
+.MovieDetail {
   color: $red;
 
-  .btn-back{
+  .movie-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .title {
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    color: $white;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-around;
+  }
+
+  .overview {
+    color: $white;
+    font-size: 20px;
+    text-align: justify;
+  }
+
+  .movie-image {
+    width: 750px;
+  }
+
+  .infos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+  }
+
+  .footer-info {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .budget {
+    color: green;
+    margin-right: 10px;
+  }
+  .star {
+    color: yellow;
+    margin-right: 10px;
+  }
+
+  .calendar {
+    color: wheat;
+    margin-right: 10px;
+  }
+
+  .btn-back {
     background-color: $red;
     border: none;
     color: $white;
@@ -12,5 +70,11 @@
     border-radius: 8px;
     text-decoration: none;
     font-size: 18px;
+    margin-top: 25px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .btn-back:hover {
+    background-color: rgb(210, 24, 24);
   }
 }

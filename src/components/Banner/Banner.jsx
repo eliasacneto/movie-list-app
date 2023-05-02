@@ -8,15 +8,13 @@ import "./index.scss";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { Navigation } from "swiper";
-
 import Mario from "../../assets/images/mario.jpeg";
 import Interstellar from "../../assets/images/interstellar.jpeg";
 import Avengers from "../../assets/images/avengers.jpeg";
 
 import { Autoplay, Pagination } from "swiper";
 
-export default function Banner() {
+export default function Banner({ movie }) {
   return (
     <>
       <Swiper
@@ -32,7 +30,7 @@ export default function Banner() {
         modules={[Autoplay, Pagination]}
         className='mySwiper'
       >
-        <SwiperSlide>
+        <SwiperSlide className='swiper-slide'>
           <img src={Mario} alt='mario-movie' />
         </SwiperSlide>
         <SwiperSlide>

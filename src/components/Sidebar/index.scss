@@ -1,21 +1,21 @@
 @use "../../sass/variables" as *;
 
-.Sidebar{
+.Sidebar {
   background-color: $bg-black;
   height: 100vh;
-  width: 300px; 
+  width: 250px;
 
-  nav{
+  nav {
     color: $white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-ul{
-  margin-top: 50px;
-}
-  li{
+  ul {
+    margin-top: 50px;
+  }
+  li {
     display: flex;
     justify-content: center;
     list-style: none;
@@ -26,34 +26,29 @@ ul{
     width: 230px;
     height: 50px;
     cursor: pointer;
-    
+  }
+  li:hover {
+    background-color: $red;
+    width: 220px;
+    border: none;
+    border-radius: 20px;
+  }
 
-
-}
-li:hover{
-  background-color: $red;
-  width: 220px;
-  border: none;
-  border-radius: 20px;
-
-}
-
-.active{
-  background-color: $red;
-  width: 220px;
-  border: none;
-  border-radius: 20px;
+  .active {
+    background-color: $red;
+    width: 220px;
+    border: none;
+    border-radius: 20px;
+  }
 }
 
-}
-
-.icon{
+.icon {
   margin-right: 10px;
   height: 24px;
   border: none;
 }
 
-.link{
+.link {
   text-decoration: none;
   color: $white;
 }

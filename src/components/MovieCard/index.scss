@@ -1,17 +1,16 @@
 @use "../../sass/variables" as *;
 
-.MovieCard{
+.MovieCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-radius: 10px;
-  width: 230px;
+  width: 100%;
 
-  img{
-    width: 230px ;
+  img {
+    width: 210px;
   }
 
-  .movie-description{
+  .movie-description {
     background-color: #212125;
     height: 150px;
     color: $white;
@@ -22,8 +21,7 @@
     align-items: center;
   }
 
-  h3{
-    background-color: #212125;;
+  h3 {
     font-size: 16px;
     inline-size: 150px;
     overflow-wrap: break-word;
@@ -31,16 +29,28 @@
     text-align: center;
   }
 
-  .btn-red{
-
-    background-color: $red;
+  .btn-red {
+    background-color: $red !important;
     border: none;
     color: $white;
     padding: 10px;
     border-radius: 8px;
     text-decoration: none;
+    cursor: pointer;
   }
 
+  .btn-red:hover {
+    background-color: rgb(210, 24, 24);
+  }
 
+  .title-movie {
+    color: $white;
+    text-decoration: none;
+  }
 }
 
+.MovieCard:hover {
+  background-color: #212125;
+  opacity: 0.9;
+  cursor: pointer;
+}

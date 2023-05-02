@@ -17,7 +17,7 @@ const Header = () => {
         <input
           type='text'
           className='search'
-          placeholder=' Search a movie...'
+          placeholder='Search a movie...'
         ></input>
         <button>PM</button>
       </nav>

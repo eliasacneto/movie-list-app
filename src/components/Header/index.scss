@@ -1,46 +1,48 @@
 @use "../../sass/variables" as *;
 
-.Header{
-  background-color: #0F0F11;
-  height: 100px;
+.Header {
+  background-color: #0f0f11;
+  height: 70px;
   display: flex;
   width: 100%;
 
   align-items: center;
 
-  .logo{
+  .logo {
     width: 70px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     margin-left: 50px;
   }
-  h1{
+
+  h1 {
     color: $white;
     font-size: 24px;
   }
 
-  nav{
+  nav {
     display: flex;
     width: 100%;
     margin-right: 20px;
     justify-content: flex-end;
   }
 
-  input{
+  input {
     color: $gray;
     background-color: $bg-black;
-    background: url("../../assets/images/search_icon.svg") no-repeat scroll 16px 15px;
+    font-family: Helvetica, "FontAwesome", sans-serif;
     width: 250px;
     height: 50px;
     border: 1px solid $gray;
     padding: 10px;
-    padding-left: 50px;
+    padding-left: 20px;
     border-radius: 20px;
     margin-right: 15px;
     font-size: 16px;
   }
-  button{
+
+  button {
     background-color: $red;
     border: none;
     border-radius: 50%;
@@ -50,8 +52,8 @@
     color: $white;
     cursor: pointer;
   }
-  button:hover{
+
+  button:hover {
     box-shadow: rgba(241, 18, 18, 0.1) 0px 10px 50px;
   }
 }
-

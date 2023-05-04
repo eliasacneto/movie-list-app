@@ -1,24 +1,25 @@
 import "./index.scss";
 import Logo from "../../assets/images/logo.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCircleUser,
-  faSearch,
-  faUser,
-  faUserCog,
-} from "@fortawesome/free-solid-svg-icons";
 
-const Header = () => {
+const Header = (props) => {
+  function handleSubmit(event) {
+    event.preventDefault();
+    const searchValue = event.target[0].value;
+    props.onSubmit(searchValue);
+    event.target[0].value = "";
+  }
   return (
     <div className='Header'>
       <img className='logo' src={Logo} alt='logo' />
       <h1>PopMovies!</h1>
       <nav>
-        <input
-          type='text'
-          className='search'
-          placeholder='Search a movie...'
-        ></input>
+        <form onSubmit={handleSubmit}>
+          <input
+            type='text'
+            className='search'
+            placeholder='Search a movie...'
+          />
+        </form>
         <button>PM</button>
       </nav>
     </div>
